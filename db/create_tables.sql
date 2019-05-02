@@ -1,5 +1,5 @@
 create table users (
-    user_id serial primary key,
+    user_id serial PRIMARY KEY,
     firstName varChar(50),
     lastName varChar(50),
     email varChar(50)
