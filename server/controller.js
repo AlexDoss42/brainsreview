@@ -53,5 +53,22 @@ module.exports = {
       console.log(err)
       res.sendStatus(401)
     }
+  },
+  getDetails: async (req, res) => {
+    const db = req.app.get('db')
+    const { session } = req
+    try {
+      const {login_id : id } = session.user
+      console.log(id)
+      const data = await db.getUserDetails({id})
+      console.log(data)
+      res.status(200).send(data[0])
+    } catch(err) {
+      res.sendStatus(500)
+    }
+  },
+  logout: (req, res) => {
+    req.session.destroy()
+    res.sendStatus(200)
   }
 }

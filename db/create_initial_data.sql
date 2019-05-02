@@ -1,5 +1,5 @@
 insert into user_login(username, password)
-values ('Stormbreaker', 'strongestAvenger');
+values ('God of Thunder', 'strongestAvenger');
 
 insert into users (firstname, lastname, email) 
 values ('Thor', 'Odinson', 'mjolnir@asgard.live');
@@ -11,7 +11,7 @@ insert into user_login(username, password)
 values ('Iron Man', 'bestAvenger');
 
 insert into users (firstname, lastname, email) 
-values ('Tony', 'Stark', 'Tony@starkinc.io');
+values ('Tony', 'Stark', 'Tony@stark.io');
 
 insert into balances (balance)
 values (10000000);
